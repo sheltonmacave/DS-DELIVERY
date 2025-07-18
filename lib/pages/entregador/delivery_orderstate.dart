@@ -118,7 +118,7 @@ class DeliveryOrderStatePage extends StatelessWidget {
                   children: [
                     Text(title, style: const TextStyle(color: Colors.white)),
                     const SizedBox(height: 4),
-                    Text('Hora: --:--:--', style: const TextStyle(color: Colors.white30, fontSize: 12)),
+                    const Text('Hora: --:--:--', style: TextStyle(color: Colors.white30, fontSize: 12)),
                   ],
                 ),
               ),

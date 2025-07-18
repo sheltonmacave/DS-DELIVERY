@@ -78,7 +78,7 @@ class _DeliveryAuthPageState extends State<DeliveryAuthPage> {
               Expanded(
                 child: TabBarView(
                   children: [
-                    _RegisterSection(),
+                    const _RegisterSection(),
                     _LoginSection(),
                   ],
                 ),
@@ -130,7 +130,7 @@ class _PhotoPickerField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final highlightColor = const Color(0xFFFF6A00);
+    const highlightColor = Color(0xFFFF6A00);
     return GestureDetector(
       onTap: () {
         // TODO: lógica para escolher a imagem
@@ -186,7 +186,7 @@ class _DropdownFieldState extends State<_DropdownField> {
         style: const TextStyle(color: Colors.white),
         decoration: InputDecoration(
           labelText: widget.label,
-          labelStyle: TextStyle(color: Colors.white70),
+          labelStyle: const TextStyle(color: Colors.white70),
           prefixIcon: Icon(widget.icon, color: Colors.white54),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),

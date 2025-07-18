@@ -14,7 +14,7 @@ class ClientHistoryPage extends StatefulWidget {
 class _ClientHistoryPageState extends State<ClientHistoryPage> {
   final Color highlightColor = const Color(0xFFFF6A00);
   int _currentIndex = 0;
-  bool _showUI = true;
+  final bool _showUI = true;
 
   final List<Map<String, String>> _orders = [
     {
@@ -47,7 +47,7 @@ class _ClientHistoryPageState extends State<ClientHistoryPage> {
 
   @override
   Widget build(BuildContext context) {
-    final double horizontalMargin = 20;
+    const double horizontalMargin = 20;
 
     return Scaffold(
       backgroundColor: const Color(0xFF0F0F0F),
@@ -103,7 +103,7 @@ class _ClientHistoryPageState extends State<ClientHistoryPage> {
                         child: SizedBox(
                           height: 140,
                           child: FlutterMap(
-                            options: MapOptions(
+                            options: const MapOptions(
                               center: LatLng(-25.9692, 32.5732),
                               zoom: 12,
                               interactiveFlags: InteractiveFlag.none,

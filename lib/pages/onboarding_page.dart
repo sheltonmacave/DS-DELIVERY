@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:material_symbols_icons/material_symbols_icons.dart';
 import 'package:go_router/go_router.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
@@ -33,7 +34,13 @@ class _OnboardingPageState extends State<OnboardingPage> {
   void initState() {
     super.initState();
     _startAutoSlide();
+    obterToken();
   }
+
+  void obterToken() async {
+  String? token = await FirebaseMessaging.instance.getToken();
+  print('🔑 TOKEN DO DISPOSITIVO: $token');
+}
 
   void _startAutoSlide() {
     _timer = Timer.periodic(const Duration(seconds: 5), (timer) {

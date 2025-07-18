@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "539687826529",
+    "project_id": "dsdelivery-main",
+    "storage_bucket": "dsdelivery-main.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539687826529:android:a4578967309f97e2ffa620",
+        "android_client_info": {
+          "package_name": "com.example.ds_delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEPUv_aySoCZR3pb-1_E6w74fU1btULz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

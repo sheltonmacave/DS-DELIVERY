@@ -41,10 +41,12 @@ dependencies:
   firebase_auth: ^5.5.1
   cloud_firestore: ^5.5.1
   firebase_messaging: ^15.2.9
+  firebase_storage: ^12.4.9
+  flutter_local_notifications: ^17.1.2
 
   # Geolocalização e Mapas
   geolocator: ^11.0.0
-  google_maps_flutter: ^2.5.3
+  google_maps_flutter: ^2.6.1
 
   # Splash e animações
   flutter_native_splash: ^2.4.0
